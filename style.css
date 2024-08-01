@@ -1,0 +1,35 @@
+body {
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: plum;
+}
+
+
+.hidden {
+    background-color: #afe1eb;
+    border: 2px solid #00A4BD;
+    padding: 20px;
+    border-radius: 1rem;  
+  }
+
+  .hidden2 {
+    background-color: #f0ee98;
+    border: 2px solid #ffea2e;
+    padding: 20px;
+    border-radius: 1rem;  
+  }
+
+  .hidden3 {
+    background-color: #cbf1ab;
+    border: 2px solid #62f146;
+    padding: 20px;
+    border-radius: 1rem;  
+  }
+
+  .hidden4 {
+    background-color: #f39ebb;
+    border: 2px solid #e043b9;
+    padding: 20px;
+    border-radius: 1rem;  
+  }

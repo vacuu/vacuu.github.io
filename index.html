@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EGL Signaturen</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function genSignatur(){
+            var output = document.getElementById("output")
+            if(output.innerHTML == ""){
+            var vorname = document.getElementById("vorname").value;
+            // document.write(vorname);
+
+            output.innerHTML = vorname;
+        } else {
+            output.innerHTML = "";
+        }
+
+        }
+    </script>
+</head>
+<body>
+
+<h1>Signaturen Generator - EGL v0.1</h1>
+<form >
+    <div class="hidden">
+    <div>
+        <p>Titel kann bsp. Dipl. Ing. oder Dr. oder leer sein</p>
+        <label for="titel">Titel:</label>
+        <input type="text" id="titel" name="titel"><br><br>
+    </div>
+    <div>
+    <label for="vorname">Vorname:</label>
+    <input type="text" id="vorname" name="vorname" required><br><br>
+    </div>
+    <div>
+    <label for="nachname">Nachname:</label>
+    <input type="text" id="nachname" name="nachname" required><br><br>
+</div>
+</div>
+<br>
+<div class="hidden4">
+    <p>Pronomen gefällig?</p>
+    <!-- keinePronomen -->
+    <input type="radio" id="keinePronomen" name="pronomen" value="keinePronomen">
+    <label for="keinePronomen">keine Pronomen für mich</label><br><br>
+    <!-- malePronomen  -->
+    <input type="radio" id="malePronomen" name="pronomen" value="malePronomen">
+    <label for="malePronomen">(er/ihn)</label><br><br>
+    <!-- femalePronomen -->
+    <input type="radio" id="femalePronomen" name="pronomen" value="femalePronomen">
+    <label for="femalePronomen">(sie/ihr)</label><br><br>
+    <!-- eigenePronomen -->
+    <p>Nur ausfüllen, wenn eigenes Pronomen erwünscht ist:</p>
+    <label for="eigenesPronomen">Eigene Pronomenkreation:</label>
+    <input type="text" id="eigenesPronomen" name="eigenesPronomen">
+    
+
+</div>
+<br>
+<div class="hidden2">
+    <p>Welche Rollen nimmst du am EGL ein?</p>
+    <input type="checkbox" id="paedagogin" name="paedagogin">
+    <label for="paedagogin">Pädagogische Fachkraft</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Referendar</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Referendarin</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Pädagogische Schulleitung</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Stellvertretende Pädagogische Schulleitung</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Geschäftsführende Schulleitung</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Schulentwicklung</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Netzwerkadministration</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Projektsteuerung BAU</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Managerin Förder- und Drittmittel</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Hausmeister</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Mensa</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Sekretariat</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Datenschutzbeauftragte</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Medienpädagogin</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Schulsozialarbeit</label><br><br>
+    <input type="checkbox" id="paedagogischeSchulleitung" name="paedagogischeSchulleitung">
+    <label for="paedagogischeSchulleitung">Medienbildung</label><br><br>
+</div>
+<br>
+<div class="hidden3">
+    <p>Übst du eine Klassenleitung aus?</p>
+    <!-- keine Klassenleitung -->
+    <input type="radio" id="keineKlassenleitung" name="klassenleitung" value="keineKlassenleitung">
+    <label for="keineKlassenleitung">keine Klassenleitung</label><br><br>
+    <!-- 5 Klasse  -->
+    <input type="radio" id="KlassenleitungFuenfte" name="klassenleitung" value="KlassenleitungFuenfte">
+    <label for="KlassenleitungFuenfte">Klassenleitung Fünfte</label><br><br>
+    <!-- 6 Klasse Frettchen -->
+    <input type="radio" id="KlassenleitungFrettchen" name="klassenleitung" value="KlassenleitungFrettchen">
+    <label for="KlassenleitungFrettchen">Klassenleitung Frettchen</label><br><br>
+    <!-- 7 Klasse Erdmännchen -->
+    <input type="radio" id="KlassenleitungErdmaennchen" name="klassenleitung" value="KlassenleitungErdmaennchen">
+    <label for="KlassenleitungErdmaennchen">Klassenleitung Erdmännchen</label><br><br>
+    <!-- 8 Klasse Okapis  -->
+    <input type="radio" id="KlassenleitungOkapis" name="klassenleitung" value="KlassenleitungOkapis">
+    <label for="KlassenleitungOkapis">Klassenleitung Okapis</label><br><br>
+    <!-- 9 Klasse Chinchillas -->
+    <input type="radio" id="KlassenleitungChinchillas" name="klassenleitung" value="KlassenleitungChinchillas">
+    <label for="KlassenleitungChinchillas">Klassenleitung Chinchillas</label><br><br>
+    <!-- 10 Klasse Penguins -->
+    <input type="radio" id="KlassenleitungPenguins" name="klassenleitung" value="KlassenleitungPenguins">
+    <label for="KlassenleitungPenguins">Klassenleitung Penguins</label><br><br>
+    <!-- 11 Klasse Mufflons -->
+    <input type="radio" id="KlassenleitungMufflons" name="klassenleitung" value="KlassenleitungMufflons">
+    <label for="KlassenleitungMufflons">Tutor Mufflons</label><br><br>
+    <!-- 12 Klasse Lamas -->
+    <input type="radio" id="KlassenleitungLamas" name="klassenleitung" value="KlassenleitungLamas">
+    <label for="KlassenleitungLamas">Tutor Lamas</label><br><br>
+</div>
+</div>
+<br>
+</form>
+
+<button onclick="genSignatur()">Erzeuge Signatur</button><br><br>
+<div class="hidden" style="height: 320px;">
+    <p id="output"></p>
+</div>
+<div style="margin-bottom: 40%; background-color: aquamarine;"></div>
+</body>
+</html>
+
