@@ -54,6 +54,8 @@
 <div class="hidden2">
     <h3>Rollen und Funktionen</h3>
     <p>Welche Rollen nimmst du am EGL ein? Ohne Fächer denken. Nur Haupttätigkeiten.</p>
+    <input type="checkbox" id="vorstand" name="vorstand">
+    <label for="vorstand">Mitglied des Vorstandes (Rolle)</label><br><br>
     <input type="checkbox" id="paedagogin" name="paedagogin">
     <label for="paedagogin">Pädagogische Fachkraft</label><br><br>
     <input type="checkbox" id="referendar" name="referendar">
@@ -157,6 +159,7 @@
     <strong id="firstLineName"></strong>
     <span id="firstLinePronomen"></span>
     <span id="linePaedagoge"></span>
+    <span id="lineVorstand"></span>
     <span id="lineReferendar"></span>
     <span id="lineReferendarin"></span>
     <span id="linepaedagogischeSchulleitung"></span>
@@ -192,6 +195,7 @@
         var lineKlassenleitung = document.getElementById("lineKlassenleitung");
         var lineFestnetz = document.getElementById("lineFestnetz");
         var lineMobil = document.getElementById("lineMobil");
+        var lineVorstand = document.getElementById("lineVorstand");
         var linePaedagoge = document.getElementById("linePaedagoge");
         var lineReferendar = document.getElementById("lineReferendar");
         var lineReferendarin = document.getElementById("lineReferendarin");
@@ -257,6 +261,9 @@
         }
 
         // ROLLEN
+        if(document.getElementById("vorstand").checked){
+            lineVorstand.innerHTML = "<br>Mitglied des Vorstandes (Vorsitzender/Stellvertrende Vorsitzende/Schatzmeister)";
+        }
         if(document.getElementById("paedagogin").checked){
             linePaedagoge.innerHTML = "<br>Pädagogische Fachkraft";
         }
@@ -369,6 +376,7 @@
         lineKlassenleitung.innerHTML = "";
         lineFestnetz.innerHTML = "";
         lineMobil.innerHTML = "";
+        lineVorstand = "";
         linePaedagoge.innerHTML = "";
         lineReferendar.innerHTML = "";
         lineReferendarin.innerHTML = "";
