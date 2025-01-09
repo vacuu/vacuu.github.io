@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lehrkraft :: Signaturen</title>
+    <title>Eltern :: Signaturen</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
 
-<h1>Lehrkraft Signatur</h1>
+<h1>Eltern Signatur</h1>
 <form >
     <div class="hidden">
         <h3>Wie ist dein Name?</h3>
@@ -104,6 +104,9 @@
 
     <input type="checkbox" id="koordinationElternrat" name="koordinationElternrat">
     <label for="koordinationElternrat">Koordination Elternrat</label><br><br>
+    
+    <input type="checkbox" id="vereinsmitglied" name="vereinsmitglied">
+    <label for="vereinsmitglied">Mitglied Schulverein Lernwelten e.V.</label><br><br>
 
     <input type="checkbox" id="festkreis" name="festkreis">
     <label for="vorstand">Koordination Festkreis</label><br><br>
@@ -151,6 +154,7 @@
     <span id="linegta"></span>
     <span id="linebau"></span>
     <span id="linefestkreis"></span>
+    <span id="linevereinsmitglied"></span>
     <span id="lineFestnetz"></span>
     <span id="lineMobil"></span>
 
@@ -169,6 +173,7 @@
         var lineschulentwicklung = document.getElementById("lineschulentwicklung");
         var linegta = document.getElementById("linegta");
         var linebau = document.getElementById("linebau");
+        var linevereinsmitglied = document.getElementById("linevereinsmitglied");
         var linefestkreis = document.getElementById("linefestkreis");
         var lineKoordinationElternrat = document.getElementById("lineKoordinationElternrat");
         var lineElternsprecher = document.getElementById("lineElternsprecher");
@@ -316,6 +321,10 @@
             console.log('finde elternrat koordination');
             lineKoordinationElternrat.innerHTML = "<br>Koordination Elternrat";
         }
+        // vereinsmitglied Schulentwicklung
+        if(document.getElementById("vereinsmitglied").checked){
+            linevereinsmitglied.innerHTML = "<br>Mitglied Schulverein Lernwelten e.V.";
+        }
         // schulentwicklung Schulentwicklung
         if(document.getElementById("schulentwicklung").checked){
             lineschulentwicklung.innerHTML = "<br>Schulentwicklung";
@@ -360,6 +369,7 @@
         linegta.innerHTML = "";
         linefestkreis.innerHTML = "";
         linebau.innerHTML = "";
+        linevereinsmitglied.innerHTML = "";
         lineKoordinationElternrat.innerHTML = "";
         lineElternsprecher.innerHTML = "";
         lineFestnetz.innerHTML = "";
