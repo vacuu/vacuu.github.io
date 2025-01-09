@@ -1,10 +1,16 @@
-body {
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: plum;
+html{
+  height: 100%;
+  margin: 0;
+  padding-left: 20%;
+  padding-top: 2%;
+  padding-right: 20%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: plum;
+}
 
 .hidden {
     background-color: #afe1eb;
@@ -33,6 +39,7 @@ body {
     padding: 20px;
     border-radius: 1rem;  
   }
+
   .hidden6 {
     background-color: #6eb1f0;
     border: 2px solid #2c9eeb;
@@ -41,8 +48,42 @@ body {
   }
 
   .hidden5 {
+    margin-top: 16px;
     background-color: #ffffff;
     border: 2px solid #949193;
     padding: 20px;
     border-radius: 1rem;  
   }
+
+
+.container {
+  flex: 1 0 auto;
+  padding-bottom: 50px; /* Platz für den Footer */
+}
+
+
+footer {
+  flex-shrink: 0;
+  background-color: plum;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+h3 a {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-term {
+  width: 300px; /* Passen Sie diese Breite nach Bedarf an */
+  flex-shrink: 0;
+}
+
+.sub-term {
+  flex-grow: 1;
+}

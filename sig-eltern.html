@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lehrkraft :: Signaturen</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<h1>Lehrkraft Signatur</h1>
+<form >
+    <div class="hidden">
+        <h3>Wie ist dein Name?</h3>
+    <div>
+        <p>Titel kann bsp. Dipl.&#45;Ing. oder Dr. oder leer sein</p>
+        <label for="titel">Titel:</label>
+        <input type="text" id="titel" name="titel"><br><br>
+    </div>
+    <div>
+    <label for="vorname">Vorname:</label>
+    <input type="text" id="vorname" name="vorname" required><br><br>
+    </div>
+    <div>
+    <label for="nachname">Nachname:</label>
+    <input type="text" id="nachname" name="nachname" required><br><br>
+</div>
+</div>
+<br>
+<div class="hidden4">
+    <h3>Pronomen gefällig?</h3>
+    <!-- keinePronomen -->
+    <input type="radio" id="keinePronomen" name="pronomen" value="keinePronomen">
+    <label for="keinePronomen">keine Pronomen für mich</label><br><br>
+    <!-- malePronomen  -->
+    <input type="radio" id="malePronomen" name="pronomen" value="malePronomen">
+    <label for="malePronomen">(er/ihn)</label><br><br>
+    <!-- femalePronomen -->
+    <input type="radio" id="femalePronomen" name="pronomen" value="femalePronomen">
+    <label for="femalePronomen">(sie/ihr)</label><br><br>
+    <!-- eigenePronomen -->
+    <input type="radio" id="ownPronomen" name="pronomen" value="ownPronomen">
+    <label for="ownPronomen">eigenes Pronomen (bitte Textfeld ausfüllen)</label><br><br>
+    <p>Nur ausfüllen, wenn eigenes Pronomen ausgewählt ist:</p>
+    <label for="eigenesPronomen">Eigene Pronomenkreation:</label>
+    <input type="text" id="eigenesPronomen" name="eigenesPronomen">
+    
+
+</div>
+<br>
+
+<div class="hidden2">
+    <h3>Rollen und Funktionen</h3>
+    <p>Welche Rollen nimmst du am EGL ein?</p> 
+    <input type="radio" id="vorstand-none" name="vorstand" value="vorstand" value="vorstand-none" checked>
+    <label for="vorstand-none">Ich bin keine Mitglied im Vorstand</label><br><br> 
+    <input type="radio" id="vorstand-vorsitzender-m" name="vorstand" value="vorstand-vorsitzender-m">
+    <label for="vorstand-vorsitzender-m">Mitglied des Vorstandes (Vorsitzender)</label><br><br>
+    <input type="radio" id="vorstand-vorsitzender-w" name="vorstand" value="vorstand-vorsitzender-w">
+    <label for="vorstand-vorsitzender-w">Mitglied des Vorstandes (Vorsitzende)</label><br><br> 
+    <input type="radio" id="vorstand-stell-vorsitzender-m" name="vorstand" value="vorstand-stell-vorsitzender-m">
+    <label for="vorstand-stell-vorsitzender-m">Mitglied des Vorstandes (Stellvertretender Vorsitzender)</label><br><br>   
+    <input type="radio" id="vorstand-stell-vorsitzender-w" name="vorstand" value="vorstand-stell-vorsitzender-w">
+    <label for="vorstand-stell-vorsitzender-w">Mitglied des Vorstandes (Stellvertretende Vorsitzende)</label><br><br>
+    <input type="radio" id="vorstand-schatzmeister-m" name="vorstand" value="vorstand-schatzmeister-m">
+    <label for="vorstand-schatzmeister-m">Mitglied des Vorstandes (Schatzmeister)</label><br><br>    
+    <input type="radio" id="vorstand-schatzmeister-w" name="vorstand" value="vorstand-schatzmeister-w">
+    <label for="vorstand-schatzmeister-w">Mitglied des Vorstandes (Schatzmeisterin)</label><br><br>  
+    <input type="radio" id="vorstand-default" name="vorstand" value="vorstand" value="vorstand-default">
+    <label for="vorstand-default">Mitglied des Vorstandes</label><br><br>   
+      <br>
+    
+    <input type="radio" id="elternsprecher-none" name="elternsprecher" value="elternsprecher-none" checked>
+    <label for="elternsprecher-none">Ich bin kein Elternsprecher bzw. Elternsprecherin</label><br><br>
+    <input type="radio" id="elternsprecher-capybaras-m" name="elternsprecher" value="elternsprecher-capybaras-m">
+    <label for="elternsprecher-capybaras-m">Elternsprecher Capybaras</label><br><br>
+    <input type="radio" id="elternsprecher-capybaras-w" name="elternsprecher" value="elternsprecher-capybaras-w">
+    <label for="elternsprecher-capybaras-w">Elternsprecherin Capybaras</label><br><br>
+    <input type="radio" id="elternsprecher-frettchen-m" name="elternsprecher" value="elternsprecher-frettchen-m">
+    <label for="elternsprecher-frettchen-m">Elternsprecher Frettchen</label><br><br>
+    <input type="radio" id="elternsprecher-frettchen-w" name="elternsprecher" value="elternsprecher-frettchen-w">
+    <label for="elternsprecher-frettchen-w">Elternsprecherin Frettchen</label><br><br>
+    <input type="radio" id="elternsprecher-erdmaennchen-m" name="elternsprecher" value="elternsprecher-erdmaennchen-m">
+    <label for="elternsprecher-erdmaennchen-m">Elternsprecher Erdmännchen</label><br><br>
+    <input type="radio" id="elternsprecher-erdmaennchen-w" name="elternsprecher" value="elternsprecher-erdmaennchen-w">
+    <label for="elternsprecher-erdmaennchen-w">Elternsprecherin Erdmännchen</label><br><br>
+    <input type="radio" id="elternsprecher-okapis-m" name="elternsprecher" value="elternsprecher-okapis-m">
+    <label for="elternsprecher-okapis-m">Elternsprecher Okapis</label><br><br>
+    <input type="radio" id="elternsprecher-okapis-w" name="elternsprecher" value="elternsprecher-okapis-w">
+    <label for="elternsprecher-okapis-w">Elternsprecherin Okapis</label><br><br>
+    <input type="radio" id="elternsprecher-chinchillas-m" name="elternsprecher" value="elternsprecher-chinchillas-m">
+    <label for="elternsprecher-chinchillas-m">Elternsprecher Chinchillas</label><br><br>
+    <input type="radio" id="elternsprecher-chinchillas-w" name="elternsprecher" value="elternsprecher-chinchillas-w">
+    <label for="elternsprecher-chinchillas-w">Elternsprecherin Chinchillas</label><br><br>
+    <input type="radio" id="elternsprecher-penguins-m" name="elternsprecher" value="elternsprecher-penguins-m">
+    <label for="elternsprecher-penguins-m">Elternsprecher Penguins</label><br><br>
+    <input type="radio" id="elternsprecher-penguins-w" name="elternsprecher" value="elternsprecher-penguins-w">
+    <label for="elternsprecher-penguins-w">Elternsprecherin Penguins</label><br><br>
+    <input type="radio" id="elternsprecher-mufflons-m" name="elternsprecher" value="elternsprecher-mufflons-m">
+    <label for="elternsprecher-mufflons-m">Elternsprecher Mufflons</label><br><br>
+    <input type="radio" id="elternsprecher-mufflons-w" name="elternsprecher" value="elternsprecher-mufflons-w">
+    <label for="elternsprecher-mufflons-w">Elternsprecherin Mufflons</label><br><br>
+    <br>
+
+    <input type="checkbox" id="koordinationElternrat" name="koordinationElternrat">
+    <label for="koordinationElternrat">Koordination Elternrat</label><br><br>
+
+    <input type="checkbox" id="festkreis" name="festkreis">
+    <label for="vorstand">Koordination Festkreis</label><br><br>
+    <input type="checkbox" id="schulentwicklung" name="schulentwicklung">
+    <label for="schulentwicklung">Schulentwicklung</label><br><br>
+    <input type="checkbox" id="bau" name="bau">
+    <label for="bau">Projektunterstützung BAU</label><br><br>
+    <input type="checkbox" id="gta" name="gta">
+    <label for="gta">GTA</label><br><br>
+</div>
+<br>
+<br>
+<div class="hidden6">
+    <div>
+        <h3>Telefon</h3>
+        <p>Telefonnummern nur, wenn unbedingt nötig. Syntax mit Leerzeichen und ohne internationale Vorwahl.</p>
+        <p>Die Sekretariats Telefonnummer wird zukünftig als Signaturkopf automatisch an deine Signatur ergänzt,</p>
+        <p>wenn deine E-Mail erstmalig an eine externe Personen gesendet wird.</p>
+        <p><br></p>
+        <h3>Eigene Telefonnummer hinterlegen</h3>
+        <p>Syntaxbeispiel 0123 1234567</p>
+        <label for="mobil">Mobil:</label>
+        <input type="text" id="mobil" name="mobil"><br><br>
+    </div>
+    <div>
+        <p>Syntaxbeispiel 034299 708000</p>
+    <label for="festnetz">Festnetz:</label>
+    <input type="text" id="festnetz" name="festnetz"><br><br>
+    </div>
+    <div>
+</div>
+</div>
+<br>
+</form>
+
+<button onclick="genSignatur()" style="height: 40px; width: 200px; background-color: palevioletred;">Erzeuge Signatur</button><br><br>
+<div class="hidden5" style="height: 440px;">
+    <p id="firstLine" style="color: rgb(0, 36, 81);">
+    <strong id="firstLineName"></strong>
+    <span id="firstLinePronomen"></span>
+    <span id="lineVorstand"></span>
+    <span id="lineKoordinationElternrat"></span>
+    <span id="lineElternsprecher"></span>
+    <span id="lineschulentwicklung"></span>
+    <span id="linegta"></span>
+    <span id="linebau"></span>
+    <span id="linefestkreis"></span>
+    <span id="lineFestnetz"></span>
+    <span id="lineMobil"></span>
+
+</p>
+</div>
+<div style="margin-bottom: 40%; background-color: aquamarine;"></div>
+
+<script>
+    function genSignatur(){
+        console.log('function called');
+        var firstLineName = document.getElementById("firstLineName");
+        var firstLinePronomen = document.getElementById("firstLinePronomen");
+        var lineFestnetz = document.getElementById("lineFestnetz");
+        var lineMobil = document.getElementById("lineMobil");
+        var lineVorstand = document.getElementById("lineVorstand");
+        var lineschulentwicklung = document.getElementById("lineschulentwicklung");
+        var linegta = document.getElementById("linegta");
+        var linebau = document.getElementById("linebau");
+        var linefestkreis = document.getElementById("linefestkreis");
+        var lineKoordinationElternrat = document.getElementById("lineKoordinationElternrat");
+        var lineElternsprecher = document.getElementById("lineElternsprecher");
+
+
+
+
+        if(firstLineName.innerHTML == ""){
+
+         // NAME
+            var titel = document.getElementById("titel").value;
+            var vorname = document.getElementById("vorname").value;
+            var nachname = document.getElementById("nachname").value;
+            // document.write(vorname);
+            console.log(titel);
+            console.log(vorname);
+            console.log(nachname);
+        if(titel == ""){
+            firstLineName.innerHTML = `${vorname} ${nachname}`;
+        } else {
+            firstLineName.innerHTML = `${titel} ${vorname} ${nachname}`;
+        }
+
+        // PRONOMEN
+        var pronomen = document.getElementsByName('pronomen');
+        var pronomenValue;
+        for(var i = 0; i < pronomen.length; i++){
+            if(pronomen[i].checked){
+                pronomenValue = pronomen[i].value;
+            }
+        }
+        console.log(pronomenValue);
+        if(pronomenValue=="malePronomen"){
+            console.log('er ihn');
+            firstLinePronomen.innerHTML = " (er/ihn)";
+        }
+        if(pronomenValue=="femalePronomen"){
+            console.log('female sie ihr');
+            firstLinePronomen.innerHTML = " (sie/ihr)";
+        }
+        if(pronomenValue=="ownPronomen"){
+            console.log('ownPronomen function');
+            var eigenesPronomen = document.getElementById("eigenesPronomen").value;
+            console.log(eigenesPronomen);
+            firstLinePronomen.innerHTML = ` ${eigenesPronomen}`;
+        }
+
+        // VORSTAND
+        var vorstand = document.getElementsByName('vorstand');
+        var vorstandValue;
+        for(var i=0; i < vorstand.length; i++){
+            if(vorstand[i].checked) {
+                vorstandValue = vorstand[i].value;
+            }
+        }
+        console.log('VorstandsWert');
+        console.log(vorstandValue);
+        if(pronomenValue=="vorstand-none"){
+            console.log('kein Vorstand');
+            lineVorstand.innerHTML = "";
+        }
+        if(vorstandValue=="vorstand-vorsitzender-m"){
+            lineVorstand.innerHTML = "<br>Mitglied des Vorstandes (Vorsitzender)";
+        }
+        if(vorstandValue=="vorstand-vorsitzender-w"){
+            lineVorstand.innerHTML = "<br>Mitglied des Vorstandes (Vorsitzende)";
+        }
+        if(vorstandValue=="vorstand-stell-vorsitzender-m"){
+            lineVorstand.innerHTML = "<br>Mitglied des Vorstandes (Stellvertretender Vorsitzender)";
+        }
+        if(vorstandValue=="vorstand-stell-vorsitzender-w"){
+            lineVorstand.innerHTML = "<br>Mitglied des Vorstandes (Stellvertretende Vorsitzende)";
+        }
+        if(vorstandValue=="vorstand-schatzmeister-m"){
+            lineVorstand.innerHTML = "<br>Mitglied des Vorstandes (Schatzmeister)";
+        }
+        if(vorstandValue=="vorstand-schatzmeister-w"){
+            lineVorstand.innerHTML = "<br>Mitglied des Vorstandes (Schatzmeisterin)";
+        }
+        if(vorstandValue=="vorstand-default"){
+            lineVorstand.innerHTML = "<br>Mitglied des Vorstandes";
+        }
+
+        // Elternsprecher
+        var elternsprecher = document.getElementsByName('elternsprecher');
+        var elternsprecherValue;
+        for(var i=0; i < elternsprecher.length; i++){
+            if(elternsprecher[i].checked) {
+                elternsprecherValue = elternsprecher[i].value;
+            }
+        }
+        console.log('elternsprecherWert');
+        console.log(elternsprecherValue);
+        if(elternsprecherValue=="elternsprecher-none"){
+            console.log('kein Vorstand');
+            lineElternsprecher.innerHTML = "";
+        }
+        if(elternsprecherValue=="elternsprecher-capybaras-m"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecher Capybaras";
+        }
+        if(elternsprecherValue=="elternsprecher-capybaras-w"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecherin Capybaras";
+        }
+        if(elternsprecherValue=="elternsprecher-frettchen-m"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecher Frettchen";
+        }
+        if(elternsprecherValue=="elternsprecher-frettchen-w"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecherin Frettchen";
+        }
+        if(elternsprecherValue=="elternsprecher-erdmaennchen-m"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecher Erdmännchen";
+        }
+        if(elternsprecherValue=="elternsprecher-erdmaennchen-w"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecherin Erdmännchen";
+        }
+        if(elternsprecherValue=="elternsprecher-okapis-m"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecher Okapis";
+        }
+        if(elternsprecherValue=="elternsprecher-okapis-w"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecherin Okapis";
+        }
+        if(elternsprecherValue=="elternsprecher-chinchillas-m"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecher Chinchillas";
+        }
+        if(elternsprecherValue=="elternsprecher-chinchillas-w"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecherin Chinchillas";
+        }
+        if(elternsprecherValue=="elternsprecher-penguins-m"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecher Penguins";
+        }
+        if(elternsprecherValue=="elternsprecher-penguins-w"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecherin Penguins";
+        }
+        if(elternsprecherValue=="elternsprecher-mufflons-m"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecher Mufflons";
+        }
+        if(elternsprecherValue=="elternsprecher-mufflons-w"){
+            lineElternsprecher.innerHTML = "<br>Elternsprecherin Mufflons";
+        }
+
+
+        // ROLLEN
+        // koordinationElternrat Koordination Elternrat
+        if(document.getElementById("koordinationElternrat").checked){
+            console.log('finde elternrat koordination');
+            lineKoordinationElternrat.innerHTML = "<br>Koordination Elternrat";
+        }
+        // schulentwicklung Schulentwicklung
+        if(document.getElementById("schulentwicklung").checked){
+            lineschulentwicklung.innerHTML = "<br>Schulentwicklung";
+        }
+        // gta GTA
+        if(document.getElementById("gta").checked){
+            linegta.innerHTML = "<br>GTA";
+        }
+        // bau Projektsteuerung BAU
+        if(document.getElementById("bau").checked){
+            linebau.innerHTML = "<br>Projektunterstützung BAU";
+        }
+        // festkreis Koordination Festkreis
+        if(document.getElementById("festkreis").checked){
+            linefestkreis.innerHTML = "<br>Koordination Festkreis";
+        }
+
+       
+        // TELEFON
+        // Festnetz
+        var festnetz = document.getElementById("festnetz").value;
+        if(festnetz != ""){
+            lineFestnetz.innerHTML = `<br>Telefon ${festnetz}`;
+        }
+        // Mobil
+        var mobil = document.getElementById("mobil").value;
+        if(mobil != ""){
+            lineMobil.innerHTML = `<br>Mobil ${mobil}`;
+        }
+
+
+
+
+    } else {
+        console.log('clear inner HTML');
+        firstLineName.innerHTML = "";
+        firstLinePronomen.innerHTML = "";
+        lineFestnetz.innerHTML = "";
+        lineMobil.innerHTML = "";
+        lineVorstand.innerHTML = "";
+        lineschulentwicklung.innerHTML = "";
+        linegta.innerHTML = "";
+        linefestkreis.innerHTML = "";
+        linebau.innerHTML = "";
+        lineKoordinationElternrat.innerHTML = "";
+        lineElternsprecher.innerHTML = "";
+        lineFestnetz.innerHTML = "";
+        lineMobil.innerHTML = "";
+    }
+
+    }
+</script>
+
+</body>
+</html>
